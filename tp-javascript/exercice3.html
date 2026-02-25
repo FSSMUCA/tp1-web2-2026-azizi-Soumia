@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3</h1>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+      const TAUX_TVA = 0.20 ;
+      let prixHT = 150 ; 
+      let prixTTC = prixHT + (TAUX_TVA * prixHT) ;
+      let montantTva = TAUX_TVA * prixHT ;
+
+      console.log(`Prix HT : ${prixHT} £ | TVA (20%) : ${montantTva} £ | prix TTC : ${prixTTC} £ `);
+        // on change la valeur du constante 
+      TAUX_TVA = 0.15 ;
+      console.log(TAUX_TVA);
+        // on aura comme affichage an " assignment error"
+        // car on peut pas changer une constante 
+    </script>
+  </body>
+</html> 
